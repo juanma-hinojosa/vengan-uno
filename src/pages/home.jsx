@@ -8,10 +8,16 @@ import Juan from '../images/elenco/bio5.png'
 import Cuffaro from '../images/elenco/bio4.png'
 import Alan from '../images/elenco/bio1.png'
 import Medina from '../images/elenco/bio3.png'
+import DetailComponent from '../components/DetailsComponent';
+import episodios from "../json/episodiio.json"
 
 const Home = () => {
+    const copiarEpisodios = [...episodios]
+    const ultimoElemento = copiarEpisodios.slice(1).reverse()
+const estrenoEpisodio = ultimoElemento[0]
+// console.log(estrenoEpisodio);
     return (
-        <main>
+        <main className='bg-dark'>
             <section className='hero-section'>
                 <figure className="container col-xxl-8 px-4 py-5 ">
                     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -46,7 +52,13 @@ const Home = () => {
                 nombre="Como Comenzamos?"
                 foto={Group}
             />
-
+            <div className="bg-dark details-wrapper text-center">
+                <DetailComponent 
+                name={estrenoEpisodio.name}
+                resumen={estrenoEpisodio.resumen}
+                link={estrenoEpisodio.link}
+                />
+            </div>
         </main>
     )
 }
