@@ -1,0 +1,22 @@
+[
+    {
+        "foto": "../src/images/elenco/bio2.png",
+        "name": "Nahuel"
+    },
+    {
+        "foto": "../src/images/elenco/bio5.png",
+        "name": "Juan"
+    },
+    {
+        "foto": "../src/images/elenco/bio4.png",
+        "name": "Cuffaro"
+    },
+    {
+        "foto": "../src/images/elenco/bio1.png",
+        "name": "Alan"
+    },
+    {
+        "foto": "../src/images/elenco/bio3.png",
+        "name": "Medina"
+    }
+]

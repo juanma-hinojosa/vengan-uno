@@ -1,0 +1,69 @@
+.hero-section {
+    background-image: url('../images/hero-vengan.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.galeria-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 27, 27);
+}
+
+.galeria-img {
+    display: flex;
+    width: 900px;
+    height: 430px;
+}
+
+.galeria-img>img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    /* opacity: .2; */
+    filter: grayscale(100%);
+    transition: .5s ease;
+}
+
+.galeria-img>img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: .8;
+    filter: grayscale(0%);
+}
+
+.his-section {
+    background-color: rgb(18, 16, 16);
+
+}
+
+@media (max-width:962px) {
+    .galeria-img {
+        width: 700px;
+    }
+}
+
+@media (max-width:782px) {
+    .galeria-img {
+        width: 100%;
+    }
+    .galeria-img>img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        /* opacity: .2; */
+        filter: grayscale(100%);
+        transition: .5s ease;
+    }
+    
+    .galeria-img>img:hover {
+        cursor: pointer;
+        width: 150px;
+        opacity: .8;
+        filter: grayscale(0%);
+    }
+    
+}

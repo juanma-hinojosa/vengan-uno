@@ -1,0 +1,158 @@
+.nav-hidden {
+display: none;
+
+}
+.estrenos-wrapper {
+    background-image:
+        linear-gradient(rgba(48, 48, 55, 0.5), rgba(48, 48, 55, 0.5)),
+        url(../images/hinchada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+.details-wrapper > a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+    transition: .5;
+}
+
+.details-wrapper > a:hover {
+    border-bottom: 2px solid white;
+}
+
+.container-estreno {
+    display: flex;
+    flex-direction: column;
+}
+
+.episodio-wrapper {
+    margin: 13px;
+    width: 210px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.574);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.episodio-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.827);
+
+}
+
+.episodio-wrapper>div>.img-wrapper {
+    width: 100%;
+}
+
+.episodio-wrapper>div>.img-wrapper>img {
+    width: 100%;
+}
+
+.episodio-wrapper>div>.info-wrapper {
+    margin-top: 10px;
+    color: white;
+}
+
+.episodio-wrapper>div>.info-wrapper>h1 {
+    font-size: 1rem;
+    color: white;
+}
+
+.episodio-wrapper>div>.info-wrapper> p {
+    display: none;
+}
+
+.episodio-wrapper>div>.info-wrapper>.wrapper-link>h3 {
+    font-size: .7rem;
+    color: gray;
+}
+.episodio-wrapper>div>.info-wrapper> .wrapper-link > a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+    transition: .5;
+}
+
+.episodio-wrapper>div>.info-wrapper> .wrapper-link > a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+/* .video-wrapper {
+    width: 100%;
+} */
+
+.video-wrapper > iframe {
+ margin: 20px 0;
+}
+
+@media (max-width: 660px) {
+    .video-wrapper > iframe {
+        width: 100%;
+        height: 300px;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .nav-hidden {
+        display: block;
+    }
+    .estrenos-wrapper {
+        background-image: none;
+        background-color: black;
+    }
+
+    .episodio-wrapper {
+        margin: 0;
+        border-radius: 0px;
+        width: 100%;
+        padding: 15px;
+        background-color: rgb(39, 33, 33);
+        /* border-radius: 10px; */
+        border-top: 1px solid white;
+    }
+
+    .episodio-wrapper>div {
+        display: flex;
+        align-items: center;
+    }
+
+    .episodio-wrapper>div>.img-wrapper {
+        width: 100px;
+    }
+
+    .episodio-wrapper>div>.info-wrapper {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .episodio-wrapper>div>.info-wrapper>h1 {
+        font-size: .8rem;
+    }
+
+    .episodio-wrapper>div>.info-wrapper>p {
+        display: block;
+        font-size: .65rem;
+    }
+
+    .episodio-wrapper>div>.info-wrapper> .wrapper-link {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .episodio-wrapper>div>.info-wrapper> .wrapper-link > a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    
+}
