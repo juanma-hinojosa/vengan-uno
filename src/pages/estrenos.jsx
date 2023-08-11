@@ -7,7 +7,7 @@ function Estrenos() {
 
     const [currentPage, setCurrentPage] = useState(1);
     const arrayReverse = episodios.slice(1).reverse()
-    const recordsPerPage = 6;
+    const recordsPerPage = 8;
     const lastIndex = currentPage * recordsPerPage;
     const firstIndex = lastIndex - recordsPerPage;
     const records = arrayReverse.slice(firstIndex, lastIndex);
