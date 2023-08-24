@@ -1,0 +1,6 @@
+@media (max-widht: 900px) {
+    .video-details-component {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

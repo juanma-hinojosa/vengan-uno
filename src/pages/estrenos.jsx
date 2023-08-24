@@ -17,7 +17,6 @@ function Estrenos() {
     // console.log(arrayReverse);
     return (
         <main className='estrenos-wrapper py-4'>
-            {/* <iframe src="https://open.spotify.com/embed/show/3IloWajNP7AEmoEvtQiHsD/video?utm_source=generator" width="624" height="351" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
             <div className='container col-xxl-8'>
                 <h2 className='orange'>Episodios & Canales</h2>
 

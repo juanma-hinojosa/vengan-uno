@@ -14,8 +14,8 @@ import episodios from "../json/episodiio.json"
 const Home = () => {
     const copiarEpisodios = [...episodios]
     const ultimoElemento = copiarEpisodios.slice(1).reverse()
-const estrenoEpisodio = ultimoElemento[0]
-// console.log(estrenoEpisodio);
+    const estrenoEpisodio = ultimoElemento[0]
+    // console.log(estrenoEpisodio);
     return (
         <main className='bg-dark'>
             <section className='hero-section'>
@@ -25,8 +25,10 @@ const estrenoEpisodio = ultimoElemento[0]
                             <motion.img initial={{ scale: 0.5 }} transition={3} animate={{ scale: 1 }} src={LogoHero} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" />
                         </div>
                         <div className="col-lg-6 text-white">
-                            <h1 className="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-                            <p className="light">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                            <h1 className="display-5 fw-bold lh-1 mb-3">Un programda radicado en el mejor pais del Mundo</h1>
+                            <p className="light">
+                                Principalmente hablamos de futbol. Pero recuerden, todo lo aqui narrado, esta cargado de ironia y humor negro, por lo tanto nadie debe escucharlo.
+                            </p>
                             <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                                 {/* <button type="button" className="btn btn-danger btn-lg px-4 me-md-2">Primary</button> */}
                                 {/* <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button> */}
@@ -53,10 +55,10 @@ const estrenoEpisodio = ultimoElemento[0]
                 foto={Group}
             />
             <div className="bg-dark details-wrapper text-center">
-                <DetailComponent 
-                name={estrenoEpisodio.name}
-                resumen={estrenoEpisodio.resumen}
-                link={estrenoEpisodio.link}
+                <DetailComponent
+                    name={estrenoEpisodio.name}
+                    resumen={estrenoEpisodio.resumen}
+                    link={estrenoEpisodio.link}
                 />
             </div>
         </main>
