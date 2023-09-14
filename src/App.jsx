@@ -15,8 +15,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home /> } />
         <Route path='/about' element={<About />} />
-        <Route path='/plataformas' element={<Estrenos />} />
-        <Route path='/plataformas/:id' element={<Episodio />} />
+        <Route path='/episodios' element={<Estrenos />} />
+        <Route path='/episodios/:id' element={<Episodio />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <FooterComponent />

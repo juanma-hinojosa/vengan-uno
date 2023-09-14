@@ -20,7 +20,7 @@ function NavbarComponent() {
                             <Link className="nav-link orange" to="/about">Nosotros</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link orange" to="/plataformas">Plataformas</Link>
+                            <Link className="nav-link orange" to="/episodios">Episodios</Link>
                         </li>
                     </ul>
                 </div>

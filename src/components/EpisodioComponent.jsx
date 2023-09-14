@@ -13,7 +13,7 @@ function EpisodioComponent(props) {
                     <div className="wrapper-link" >
                         <h3>{props.fecha}</h3>
                         {/* <a href="https://open.spotify.com/show/3IloWajNP7AEmoEvtQiHsD?si=6fd8e6b0055e4b86" target="_blank"> escuchar</a> */}
-                        <Link to={`/plataformas/${props.name}`}>Escuchar</Link>
+                        <Link to={`/episodios/${props.name}`}>Escuchar</Link>
                     </div>
                 </div>
             </div>
