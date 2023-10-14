@@ -8,6 +8,9 @@ import Juan from '../images/elenco/bio5.png'
 import Cuffaro from '../images/elenco/bio4.png'
 import Alan from '../images/elenco/bio1.png'
 import Medina from '../images/elenco/bio3.png'
+import Pablo from '../images/elenco/pablo.jpg'
+import Paula from '../images/elenco/paula.jpg'
+import Marian from '../images/elenco/mariano.jpg'
 import DetailComponent from '../components/DetailsComponent';
 import episodios from "../json/episodiio.json"
 
@@ -29,10 +32,6 @@ const Home = () => {
                             <p className="light">
                                 Principalmente hablamos de futbol. Pero recuerden, todo lo aqui narrado, esta cargado de ironia y humor negro, por lo tanto nadie debe escucharlo.
                             </p>
-                            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                                {/* <button type="button" className="btn btn-danger btn-lg px-4 me-md-2">Primary</button> */}
-                                {/* <button type="button" className="btn btn-outline-secondary btn-lg px-4">Default</button> */}
-                            </div>
                         </div>
                     </div>
                 </figure>
@@ -44,7 +43,10 @@ const Home = () => {
                 <section className='galeria-img'>
                     <img src={Nahuel} alt="Foto-Panelista" />
                     <img src={Juan} alt="Foto-Panelista" />
+                    <img src={Pablo} alt="Foto-Panelista" />
                     <img src={Cuffaro} alt="Foto-Panelista" />
+                    <img src={Paula} alt="Foto-Panelista" />
+                    <img src={Marian} alt="Foto-Panelista" />
                     <img src={Alan} alt="Foto-Panelista" />
                     <img src={Medina} alt="Foto-Panelista" />
                 </section>
