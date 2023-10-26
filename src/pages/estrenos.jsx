@@ -6,7 +6,7 @@ import { useState } from 'react';
 function Estrenos() {
 
     const [currentPage, setCurrentPage] = useState(1);
-    const arrayReverse = episodios.slice(1).reverse()
+    const arrayReverse = episodios.slice().reverse()
     const recordsPerPage = 8;
     const lastIndex = currentPage * recordsPerPage;
     const firstIndex = lastIndex - recordsPerPage;
