@@ -2,3 +2,20 @@
     color: #EE8D4D;
     text-decoration: none;
 }
+
+.container-links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-links>.icon-link {
+    font-size: 1.6em;
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+
+.container-links>.icon-link:hover {
+    color: #EE8D4D;   
+}

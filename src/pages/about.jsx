@@ -20,12 +20,12 @@ function About() {
             />
 
             <SectionComponent
-                nombre={'Cuffaro Mufaro'}
+                nombre={'Diego Cuffaro'}
                 foto={Cuffaro}
             />
 
             <SectionReverseComponent
-                nombre={'Alan'}
+                nombre={'Alan Diaz'}
                 foto={Alan}
             />
 

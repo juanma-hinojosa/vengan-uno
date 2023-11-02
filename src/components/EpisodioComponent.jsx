@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function EpisodioComponent(props) {
     return (
-        <figure className="episodio-wrapper" >
-            <div >
+        <figure data-aos='fade-up' className="episodio-wrapper" >
+            <div>
                 <div className="img-wrapper">
                     <img src={props.img} alt="imagen episodio" />
                 </div>
@@ -13,7 +13,7 @@ function EpisodioComponent(props) {
                     <div className="wrapper-link" >
                         <h3>{props.fecha}</h3>
                         {/* <a href="https://open.spotify.com/show/3IloWajNP7AEmoEvtQiHsD?si=6fd8e6b0055e4b86" target="_blank"> escuchar</a> */}
-                        <Link to={`/episodios/${props.name}`}>Escuchar</Link>
+                        <Link to={`/episodios/${props.name}`}>Escuchar <i className="fa-solid fa-volume-high"></i></Link>
                     </div>
                 </div>
             </div>
